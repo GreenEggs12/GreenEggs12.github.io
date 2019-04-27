@@ -20,8 +20,8 @@ function getAddress(latitude, longitude) {
           GOOGLE_MAP_KEY)
         .then(
             function success(response) {
-                console.log('User\'s Address Data is ', response);
-                document.getElementById("locationText") = response.toString();
+                console.log('User\'s Address Data is ', response)
+                
                 
             },
             function fail(status) {
