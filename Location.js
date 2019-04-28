@@ -1,12 +1,11 @@
-//get country via ip
-
 function ipLookUp() {
     $.ajax('http://ip-api.com/json')
         .then(
             function success(response) {
                 console.log('User\'s Location Data is ', response);
                 console.log('User\'s Country', response.country);
-                getAddress(response.lat, response.lon)
+                getAddress(response.lat, response.lon);
+                document.getElementById("locationText").innerHTML = "Hello visitor from " + response.country + "!";
             },
 
             function fail(data, status) {
@@ -19,11 +18,13 @@ function ipLookUp() {
 function getAddress(latitude, longitude) {
     $.ajax('https://maps.googleapis.com/maps/api/geocode/json?' +
         'latlng=' + latitude + ',' + longitude + '&key=' +
-        GOOGLE_MAP_KEY)
+        'AIzaSyDtAdi_4DbRMWWtcgVmrwHwbxvQ_UeRphc')
         .then(
             function success(response) {
-                console.log('User\'s Address Data is ', response)
-                document.getElementById("locationText") = response;
+                console.log('User\'s Address Data is ', response);
+                
+                
+                
             },
             function fail(status) {
                 console.log('Request failed.  Returned status of',
@@ -41,6 +42,7 @@ if ("geolocation" in navigator) {
                 'longitude', position.coords.longitude);
             getAddress(position.coords.latitude,
                 position.coords.longitude)
+            ipLookUp()
         },
         function error(error_message) {
             // for when getting location results in an error
