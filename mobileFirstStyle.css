@@ -76,6 +76,13 @@ h2 {
     margin: 0;
 }
 
+h4 {
+    font-weight: 300;
+    font-size: 0.8rem;
+   
+    margin: 0;
+}
+
 img{
     display: block;
     width: 100%;
@@ -223,9 +230,9 @@ footer h3{
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 46%;
+        width: 100%;
         transform: translateX(100%);
-        transition: transform 0.5s ease-in;
+        transition: transform 0.4s ease-in;
 
     }
 
