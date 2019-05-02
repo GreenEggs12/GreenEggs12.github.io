@@ -5,26 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <script type="text/javascript" src="Location.js"></script>
+    
     <link rel="stylesheet" href="mobileFirstStyle.css" />
 
     <title>Samuel Smith Dev</title>
 </head>
 
 <body>
+    <nav>
+        <div class="logo">
+            <h4><strong>SAMUEL SMITH</strong>//Dev</h4>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a herf="#business" id="business-id">Helping your business</a>
+            </li>
+            <li>
+                <a herf="#about" id="about-id">About me</a>
+            </li>
+            <li>
+                <a herf="#work" id="work-id" >Previous work</a>
+            </li>
+            <li>
+                <a herf="#contact" id="contact-id">Contact</a>
+            </li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <script src="slide.js"></script>
+
     <main>
         <!-- Landing Area -->
         <div id="landing">
             <div id="landing-text">
+
                 <div id="landing-text-inner">
                     <h1><strong>Samuel Smith:</strong> Developer</h1>
                     <h2 id="locationText">Hello visitor!</h2>
+
                     <a href="#images" class="btn" id="view-work">
                         View Work
                     </a>
+
                     <br />
                     <!--<a href="React.html" class="btn" id="view-work">
-                    View React
-                </a> -->
+                        View React
+                    </a> -->
                 </div>
 
             </div>
@@ -32,42 +63,43 @@
         </div>
         <div id="images">
             <div id="header">
-                <h2>My Projects</h2>
+                <h2>Helping your business grow</h2>
             </div>
-            <img src="https://source.unsplash.com/1600x900/?computer" alt="" />
-            <div class="caption">
-                <h3>Hackersideprojects.com</h3>
-                <p>My first "Work in progress" website. The goal of this project is to create a space for technological creators to be able to share their ideas and projects with other fellow creators.</p>
 
+            <div id="business">
+                <img src="https://source.unsplash.com/1600x900/?computer" alt="" />
+                <div class="caption">
+                    <h3>Hackersideprojects.com</h3>
+                    <p>My first "Work in progress" website. The goal of this project is to create a space for technological creators to be able to share their ideas and projects with other fellow creators.</p>
+                </div>
             </div>
-            <img src="https://source.unsplash.com/1600x900/?code" alt="" />
-            <div class="caption">
-                <h3>Blog</h3>
-                <p>A space where I share the articles I've written and share the ones I love.</p>
 
+            <div id="about">
+                <img src="https://source.unsplash.com/1600x900/?code" alt="" />
+                <div class="caption">
+                    <h3>Blog</h3>
+                    <p>A space where I share the articles I've written and share the ones I love.</p>
+
+                </div>
             </div>
-            <img src="https://source.unsplash.com/1600x900/?mobile-phone" alt="" />
-            <div class="caption">
-                <h3>Youtube</h3>
-                <p>I create video content such as tutorials for beginner developers.<br> <em>“LIVE AS IF YOU WERE TO DIE TOMORROW. LEARN AS IF YOU WERE TO LIVE FOREVER.” ―MAHATMA GANDHI</em> </p>
 
+            <div id="work">
+                <img src="https://source.unsplash.com/1600x900/?mobile-phone" alt="" />
+                <div class="caption">
+                    <h3>Youtube</h3>
+                    <p>I create video content such as tutorials for beginner developers.<br> <em>“LIVE AS IF YOU WERE TO DIE TOMORROW. LEARN AS IF YOU WERE TO LIVE FOREVER.” ―MAHATMA GANDHI</em> </p>
+
+                </div>
             </div>
-            <img src="https://source.unsplash.com/1600x900/?coding" alt="" />
-            <div class="caption">
-                <h3>Podcast</h3>
-                <p>I've created an audio podcast for people who are in a similar situation as myself and wish to learn in a more passive manner.</p>
 
+            <div id="contact">
+                <img src="https://source.unsplash.com/1600x900/?coding" alt="" />
+                <div class="caption">
+                    <h3>Podcast</h3>
+                    <p>I've created an audio podcast for people who are in a similar situation as myself and wish to learn in a more passive manner.</p>
+
+                </div>
             </div>
-        </div>
-        
-        <div class="twitter">
-            <h3>Twitter</h3>
-            <a class="twitter-timeline" href="https://twitter.com/SamuelSmithDev?ref_src=twsrc%5Etfw"data-tweet-limit="3"data-chrome="nofooter noborders">Tweets by SamuelSmithDev</a>
-            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-            <p></p>
-
-        </div>
-
         </div>
     </main>
     <footer>

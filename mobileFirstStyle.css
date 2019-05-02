@@ -1,11 +1,65 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
 
-body {
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
     font-family: 'Roboto Slab', serif;
     margin: 0;
     background: #eee;
     height: auto;
 }
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #fff ;
+}
+
+.logo{
+    color: #333;
+    text-transform: upprecase;
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width:  30%;
+}
+
+.nav-links li{
+    list-style: none;
+}
+
+.nav-links a{
+    color: #333;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight:bold;
+    font-size: 14px;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
 
 h1 {
     font-weight: 400;
@@ -30,8 +84,8 @@ img{
 main{
     max-width: 900px;
     margin: auto;
-    box-shadow: 30px 0px 40px rgba(0,0,0,0.1), 
-        -30px 0px 40px rgba(0,0,0,0.12);
+    box-shadow: 5px 0px 30px rgba(0,0,0,0.1), 
+        -5px 0px 5px rgba(0,0,0,0.12);
 }
 
 #landing {
@@ -117,25 +171,103 @@ footer h3{
     margin-bottom: 0;
 }
 
-/* Screen sizes 500px and Up */
-@media(min-width:500px){
-    #landing{
-        display:flex;
-        height: 100%;
-    }
 
-    #landing-text{
-        height: 100vh;
-    }
 
-    #landing-image{
-        height: 100vh;
-    }
+
+.btn {
+    padding: 1rem 3rem;
 }
 
-/* Screen Sizes 700px and Up*/
-@media(min-width: 700px){
+
+
+/* Screen sizes 500px and Up 
+@media(min-width:500px){
+
+
+    
+}
+
+ Screen Sizes 700px and Up
+@media(min-width: 769px){
     .btn{
         padding: 1rem 3rem;
     }
+
+    .burger {
+        display: none;
+    }
+
+}*/
+
+@media screen and (max-width: 768px){
+    #landing {
+        display: flex;
+        height: 100%;
+    }
+
+    #landing-text {
+        height: 100vh;
+    }
+
+    #landing-image {
+        height: 100vh;
+    }
+
+
+    .nav-links {
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 46%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+
+    }
+
+    /*.nav-links li {
+         opacity: 0;
+    }*/
+
+    .burger {
+        display: block;
+        cursor: pointer;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+}
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translate(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+
+
+.toggle .line2 {
+    opacity:0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px,-6px);
+}
+
+.nav-active {
+    transform: translateX(0%);
 }
