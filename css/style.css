@@ -79,7 +79,8 @@ Author URI: http://www.aetherdesign.net
 	
 	#navigation li.active a, #navigation li.active a:hover {
 		color: white;
-		background: #ff2a00;
+        font-weight: 600;
+		background: #2189d9;
 	}
 	
 	/* Dropdown */
@@ -161,7 +162,7 @@ Author URI: http://www.aetherdesign.net
 		padding-top: 80px;
 		padding-bottom: 80px;
 		width: 100%;
-		background: #ff2a00;
+		background: #1f6499;
 		text-align: center;
 	}
 	
@@ -171,8 +172,8 @@ Author URI: http://www.aetherdesign.net
 	}
 	
 	#call-to-action h2 {
-		color: #ffc6bb;
-		padding-bottom: 35px;
+		color: #fff;
+		padding-bottom: 20px;
 	} 
 		
 	

@@ -203,4 +203,31 @@ jQuery(document).ready(function() {
 				'<a class="screen-roll" href="{{image_b}}"><span></span><img src="{{image_s}}" alt="{{title}}" /></a>' +
 			'</li>'});
 		
-});  
+}); 
+
+
+
+// MOBILE RESIZE
+
+jQuery(document).ready(function () {
+
+    function isitmobile() {
+        if (screen.width > 767) {
+            console.log('Youre using a mobile device');
+            changedatax();
+            return true;
+
+        }
+        else {
+            console.log('this is a tablet or desktop');
+            return false;
+        }
+    }
+
+    function changedatax() {
+        $("#imagesize").data("x", $("#imagesize").data("x") = 400);
+    }
+
+    window.onload = isitmobile;
+    window.onresize = isitmobile;
+});

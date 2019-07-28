@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\images"
+    "\\css",
+    "\\images",
+    "\\js\\slider"
   ],
-  "SelectedNode": "\\images\\mobile-nav.png",
+  "SelectedNode": "\\portfolio-heartjoystudios.html",
   "PreviewInSolutionExplorer": false
 }

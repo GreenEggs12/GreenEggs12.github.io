@@ -117,11 +117,30 @@ a.button {
 		-moz-border-radius: 3px;
 		border-radius: 3px;
 	}
-	
+
 	a.button.dark:hover {
 		color: #221e1e!important;
 		background: #fff;
 	}
+
+    a.button.hire {
+        display: block;
+        color: white !important;
+        background: #221e1e;
+        line-height: 100%;
+        padding: 20px 12px 23px 12px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 30px;
+        border-radius: 20px;
+        font-size: 50px;
+        margin-left: 22px;
+    }
+
+        a.button.hire:hover {
+            transition: background .2s ease-in;
+            color: #eded80 !important;
+            background: #1f6499;
+        }
 	
 	
 /*#Accordion 
@@ -376,16 +395,44 @@ a.button {
 
 
 	/* Smaller than standard 960 (devices and browsers) */
-	@media only screen and (max-width: 959px) { 
-	
-		
+	@media only screen and (max-width: 959px) {
+
+        a.button.hire {
+            display: block;
+            color: white !important;
+            background: #221e1e;
+            line-height: 100%;
+            padding: 10px 10px 10px 10px;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 30px;
+            border-radius: 5px;
+            font-size: 40px;
+            margin-left: 22px;
+        }
 	}
 	
 	/* Tablet Portrait size to standard 960 (devices and browsers) */
 	@media only screen and (min-width: 768px) and (max-width: 959px) {
 	
 		h1 { line-height: 110%; }
-		
+
+        a.button.hire {
+            display: block;
+            color: white !important;
+            background: #221e1e;
+            line-height: 100%;
+            padding: 10px 10px 10px 10px;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 30px;
+            border-radius: 5px;
+            font-size: 40px;
+            margin-left: 22px;
+        }
+
+		img.mobile {
+            width: 500px !important;
+            height: 467px !important;
+		}
 	
 	}
 
@@ -396,17 +443,42 @@ a.button {
 		h1 { line-height: 110%; }
 		
 		.thumb { padding-top: 20px; }
+
+        a.button.hire {
+            display: block;
+            color: white !important;
+            background: #221e1e;
+            line-height: 100%;
+            padding: 10px 10px 10px 10px;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 30px;
+            border-radius: 5px;
+            font-size: 10px;
+            margin-left: 22px;
+        }
+
+        img.mobile {
+            width: 160px !important;
+            height: 150px !important;
+        }
 	
 	}
 
 	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-	@media only screen and (min-width: 480px) and (max-width: 767px) { 
-	
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+        img.mobile {
+            width: 160px !important;
+            height: 150px !important;
+        }
+        
 	}
 
 	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-	@media only screen and (max-width: 479px) {	
-	
+	@media only screen and (max-width: 479px) {
+        img.mobile {
+            width: 160px !important;
+            height: 150px !important;
+        }
 	
 	}
 	
